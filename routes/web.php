@@ -14,8 +14,8 @@ Route::get('/pendaftaran', [DashboardController::class, 'pendaftaran']);
 Route::get('/upload', [DashboardController::class, 'upload']);
 Route::get('/pembayaran', [DashboardController::class, 'pembayaran']);
 Route::get('/notifikasi', [DashboardController::class, 'notifikasi']);
+Route::get('/pengumuman', [DashboardController::class, 'pengumuman']);
 
 // Tambahkan routes placeholder untuk menu lain (Kehadiran, Pengumuman, Syarat)
 Route::get('/kehadiran', function () { return view('placeholder', ['title' => 'Kehadiran']); });
-Route::get('/pengumuman', function () { return view('placeholder', ['title' => 'Pengumuman']); });
 Route::get('/syarat', function () { return view('placeholder', ['title' => 'Syarat & Ketentuan']); });
