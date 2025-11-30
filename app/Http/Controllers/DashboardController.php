@@ -35,4 +35,10 @@ class DashboardController extends Controller
     {
         return view('notifikasi.index');
     }
+
+    // Desktop 6
+    public function pengumuman()
+    {
+        return view('pengumuman.index');    
+    }
 }
